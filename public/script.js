@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     try {
       const response = await fetch('https://al-nahda-backend.onrender.com/api/message', {
 
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
