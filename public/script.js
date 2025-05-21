@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const message = form.querySelector('textarea[name="message"]').value;
 
     try {
-      const response = await fetch('/api/message', {
+      const response = await fetch('https://al-nahda-backend.onrender.com/api/message', {
+
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
