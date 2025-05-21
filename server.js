@@ -7,7 +7,9 @@ const path = require('path');
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://al-nahda-nursery-sesd.vercel.app'
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
